@@ -661,7 +661,7 @@ position: relative;
 top: 0;
 right: 0;
 left: 0;
-height: 63px;
+height: 75px;
 display: grid;
 align-content: center;
 /* box-shadow: -8px 12px 18px 0 rgba(25, 42, 70, 0.13); */
@@ -853,7 +853,7 @@ margin-left: 16.29rem;
 .content-wrapper {
 min-height: 100%;
 transition: all 0.5s;
-overflow: hidden;
+
 /* border-radius: 1.25rem; */
 /* margin-left: 16.29rem; */
 width:calc(100% - 233px);
@@ -1927,6 +1927,13 @@ font-weight: 300;
  background: #2fc6f6;
  font-size: 14px
 }
+.cloclp-div{
+  color: var(--whitecolor);
+}
+.cloclp-div time {
+  font-size: 36px;
+  font-weight: 300;
+}
 .adtexy h4{
 position: relative;
 }
@@ -1959,6 +1966,8 @@ border-radius: 12px;
 padding: 13px 14px;
 width: 100%;
 cursor: pointer;
+border: none;
+outline: none;
 }
 .imguser{
 display: block;
@@ -2322,9 +2331,28 @@ text-align: center;
 position: relative;
 }
 
-
-
-
+.sc-fAUdSK{
+    font-size: 14px;
+}
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.rdt_TableRow div:last-child > div{
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+  padding: .25rem .5rem;
+  font-size: 13px;
+  border-radius: .2rem;
+  padding: 8px;
+}
+.jodit-status-bar-link{
+  display: none !important;
+}
 @media(max-width:910px){
 .main-sliderbar{
   transform: translateX(-234px);
