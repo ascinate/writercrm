@@ -26,7 +26,7 @@ function LoginForm(){
 
 
             <div className="diuy-div d-sm-flex align-items-center justify-content-between">
-                <button type="submit" className="btn btn-left-btn w-100" name="submit"> Loign </button>
+                <button type="submit" className="btn btn-left-btn w-100" name="submit"> Login </button>
 
             </div>
          </form>
