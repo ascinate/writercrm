@@ -13,8 +13,8 @@ function App() {
           <Router>
              <div className="dahbo-dd">
                   <Routes> 
-                    <Route excaexact="true" path="/login" element={<Login />} />
-                    <Route excaexact="true" path="/" element={<Tasks/>} />
+                    <Route excaexact="true" path="/" element={<Login />} />
+                    <Route excaexact="true" path="/tasks" element={<Tasks/>} />
                   
                   </Routes>
              </div>
