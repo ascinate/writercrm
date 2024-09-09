@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function LoginForm(){
     return(
@@ -26,7 +27,7 @@ function LoginForm(){
 
 
             <div className="diuy-div d-sm-flex align-items-center justify-content-between">
-                <button type="submit" className="btn btn-left-btn w-100" name="submit"> Login </button>
+                <NavLink to="/tasks" className="btn btn-left-btn w-100"> Login </NavLink>
 
             </div>
          </form>
