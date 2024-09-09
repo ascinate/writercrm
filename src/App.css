@@ -2246,6 +2246,8 @@ color: var(--whitecolor);
 text-transform: uppercase;
 transition: all 0.5s;
 font-weight: 500;
+line-height: 51px;
+
 }
 .btn-left-btn:hover{
 background: #afe016;
