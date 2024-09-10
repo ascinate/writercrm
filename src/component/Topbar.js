@@ -6,6 +6,7 @@ import Clock from 'react-live-clock';
 import user from '../img/user01.svg';
 import Fileimg from "../img/system-auth-form__icon-logout.svg";
 import closepic from "../img/close.svg";
+import { Button } from 'react-form-elements';
 
 function Topbar() {
     const UserDate = [
@@ -181,6 +182,19 @@ function Topbar() {
 
 
                     
+                </div>
+
+                <div className="footer-diuv-modal">
+                    <div className="d-flex align-items-center">
+                        <NavLink to="/edit" className="btn btn-aditext">  Edit  </NavLink>
+                        <Button className="btn btn-aditext ms-3"
+                        onClick={e => {
+                            console.info('The button was clicked')
+                        }}
+                        >
+                           Cancel
+                        </Button>
+                    </div>
                 </div>
                
             

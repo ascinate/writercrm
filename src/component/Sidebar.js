@@ -28,14 +28,14 @@ function Sidebar(){
                     </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/tasks" className="link05"> 
+                        <NavLink to="/manage-user" className="link05"> 
                         
                              <span className="txet-men06"> Manage user </span> 
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink to="/tasks" className="link05"> 
+                        <NavLink to="/billing" className="link05"> 
                         
                              <span className="txet-men06"> Manage Billing</span> 
                         </NavLink>

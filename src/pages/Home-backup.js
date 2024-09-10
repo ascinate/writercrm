@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MultiSelect } from "react-multi-select-component";
+// import { MultiSelect } from "react-multi-select-component";
 import Sidebar from "../component/Sidebar";
 
 const options = [
@@ -18,7 +18,7 @@ function Home(){
     return(
         <>
        
-      <MultiSelect
+      {/* <MultiSelect
         options={options}
         value={selected}
         onChange={setSelected}
@@ -30,7 +30,7 @@ function Home(){
             value={selectedt}
             onChange={setSelectedt}
             labelledBy="Select"
-        />
+        /> */}
 
 
         </>

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import Sidebar from "../component/Sidebar";
 import Topbar from "../component/Topbar";
 import DataTable from "react-data-table-component";
-import Alltask from "../component/Taskdata";
-import CreateTask from "../component/CreateTask";
+import Allmember  from "../component/MemberData";
+import CreateMember from "../component/CreateMember";
+import { NavLink } from "react-router-dom";
+import { MdOutlineEdit } from "react-icons/md";
+import { TfiTrash } from "react-icons/tfi";
 
 
 function getNumberOfPages(rowCount, rowsPerPage) {
@@ -27,28 +30,50 @@ function getNumberOfPages(rowCount, rowsPerPage) {
       sortable: true
     },
     {
-      name: "Active",
-      selector: (row) => row.active,
+      name: "Email",
+      selector: (row) => row.email,
       sortable: true
     },
     {
-      name: "Deadline",
-      selector: (row) => row.deadline,
+      name: "Phone",
+      selector: (row) => row.phone,
       sortable: true,
       right: true
     },
     {
-        name: "Responsible Person",
-        selector: (row) => row.responsible,
+        name: "Designation",
+        selector: (row) => row.designation,
         sortable: true,
         right: true
     },
     {
-        name: "Status",
-        selector: (row) => row.status,
+        name: "Role",
+        selector: (row) => row.role,
         sortable: true,
         right: true
     },
+    {
+        name: "Created",
+        selector: (row) => row.created,
+        sortable: true,
+        right: true
+    },
+    
+    {
+        name: "Action",
+        selector: (row) => row.action,
+        button: true,
+        cell: () => (
+          <div className="App">
+            <div class="d-flex align-items-center">
+                <NavLink to="/" className="btn btn-edit"> <MdOutlineEdit /> </NavLink>
+                <NavLink to="/" className="btn btn-edit ms-3"> < TfiTrash /> </NavLink>
+              
+             
+            </div>
+          </div>
+        )
+      }
     
   ];
   const BootyPagination = ({
@@ -124,8 +149,8 @@ function getNumberOfPages(rowCount, rowsPerPage) {
 
 
 
-function Tasks(){
-    const [ mcworkData, setworkData] = useState(Alltask);
+function ManageUser(){
+    const [ mcworkData, setworkData] = useState(Allmember);
     console.log(mcworkData);
 
     return(
@@ -136,16 +161,16 @@ function Tasks(){
              <section className="top-sectioun d-inline-block w-100">
                 <div className="d-flex top-boer-ali align-items-center">
                     <div className="left-texr">
-                       <h2 className="text-white titels-01"> My tasks </h2>
+                       <h2 className="text-white titels-01"> Members </h2>
                     </div>
                     <div className="right-serach-div col-lg-9 d-flex align-items-center ps-5">
-                       <CreateTask/>
+                       <CreateMember/>
                         
                         
                     </div>
                 </div>
              </section>
-             <section className="mail-sercotu d-inline-block w-100 mt-4">
+             <section className="mail-sercotu new-data d-inline-block w-100 mt-4">
                 <div className="onisde d-inline-block w-100 position-relative"> 
                 <DataTable
                     columns={columns}
@@ -163,4 +188,4 @@ function Tasks(){
         </>
     )
 }
-export default Tasks;
+export default ManageUser;

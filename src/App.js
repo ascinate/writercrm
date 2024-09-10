@@ -5,6 +5,8 @@ import './App.css';
 import AuthLayout from "./AuthLayout.js";
 import Login from "./pages/Login.js";
 import Tasks from "./pages/Tasks.js";
+import ManageUser from "./pages/ManageUser.js";
+import Billing from "./pages/Billing.js";
 import { BrowserRouter as Router, Routes, Route, Switch} from "react-router-dom";
 
 function App() {
@@ -15,7 +17,8 @@ function App() {
                   <Routes> 
                     <Route excaexact="true" path="/" element={<Login />} />
                     <Route excaexact="true" path="/tasks" element={<Tasks/>} />
-                  
+                    <Route excaexact="true" path="/manage-user" element={<ManageUser/>} />
+                    <Route excaexact="true" path="/billing" element={<Billing/>} />
                   </Routes>
              </div>
              
