@@ -13,7 +13,7 @@ const Alltask = [
       },
       {
         id: 2,
-        title: "Z0C120A1",
+        title: <NavLink to="/edit-task">Z0C120A1 </NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -22,7 +22,7 @@ const Alltask = [
       },
       {
         id: 3,
-        title: "WS24",
+        title: <NavLink to="/edit-task">WS24</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -31,7 +31,7 @@ const Alltask = [
       },
       {
         id: 4,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -40,7 +40,7 @@ const Alltask = [
       },
       {
         id: 5,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -49,7 +49,7 @@ const Alltask = [
       },
       {
         id: 6,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -58,7 +58,7 @@ const Alltask = [
       },
       {
         id: 7,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -67,7 +67,7 @@ const Alltask = [
       },
       {
         id: 8,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -76,7 +76,7 @@ const Alltask = [
       },
       {
         id: 9,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -85,7 +85,7 @@ const Alltask = [
       },
       {
         id: 10,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -94,7 +94,7 @@ const Alltask = [
       },
       {
         id: 11,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -103,7 +103,7 @@ const Alltask = [
       },
       {
         id: 12,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -112,7 +112,7 @@ const Alltask = [
       },
       {
         id: 13,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task">AK0307 Sangeeta 2500 words Data driven decisions</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
