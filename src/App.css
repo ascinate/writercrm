@@ -2816,6 +2816,12 @@ font-weight: 400;
 .show-profiles{
   display:none;
 }
+.ioaitR div:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 .test-block-div .cm-news{
   border: 1px solid #ced4da !important;
   height: 45px !important;
