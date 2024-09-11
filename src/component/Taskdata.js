@@ -1,7 +1,9 @@
+import { NavLink } from "react-router-dom";
+
 const Alltask = [
     {
         id: 1,
-        title: "AK0307 Sangeeta 2500 words Data driven decisions",
+        title: <NavLink to="/edit-task"> AK0307 Sangeeta 2500 words Data driven decisions </NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],

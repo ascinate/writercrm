@@ -1,12 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
 import logo from '../img/logobi.png';
 import { NavLink } from "react-router-dom";
-import { CiSearch } from "react-icons/ci";
 import Clock from 'react-live-clock';
 import user from '../img/user01.svg';
 import Fileimg from "../img/system-auth-form__icon-logout.svg";
 import closepic from "../img/close.svg";
-import { Button } from 'react-form-elements';
+import { TextBox, Checkbox , DateTime, EmailInput, Telephone } from 'react-form-elements';
+import Select from 'react-select';
 
 function Topbar() {
     const UserDate = [
@@ -18,16 +18,28 @@ function Topbar() {
         { label:'Created', personal:'exmpale@gmail.com'  },
     ];
 
+    const showfind = () => {
+        document.querySelector(".proifle-pic-name").classList.add('pro-div-show');
+    }
+    const hideFind = () => {
+        document.querySelector(".proifle-pic-name").classList.remove('pro-div-show');
+    }
+    
+    const options = [
+        { value: 'webdesigner', label: 'Web Designer' },
+        { value: 'marketing', label: 'Marketing' }
+      ]
+
+    const role = [
+        { value: 'webdesigner', label: 'Web Designer' },
+        { value: 'marketing', label: 'Marketing' }
+      ]
     return(
         <>
          <div className="dashboard-head float-start w-100">
       
             <div className="d-flex align-items-center justify-content-start d-lg-none mt-4 mb-3">
-                <button className="btn btn-golger p-0 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg>
-                </button>
+               
                 <NavLink to="/" className="logo-modile">
                     <img alt="logo" src={logo}/>
                 </NavLink>
@@ -160,6 +172,7 @@ function Topbar() {
                                 <h2>  Contact information </h2>
                             </div>
                             <div className="proifle-pic-name">
+                              <div className="show-profiles">
                                 <div className="row row-cols-1 gy-4">
                                     
                                      {UserDate.map((personals, index) => (
@@ -174,6 +187,61 @@ function Topbar() {
                                    
                                     
                                 </div>
+                              </div>
+                              <div className="edit-forms">
+                                 <div className="row row-cols-1 row-cols-lg-2 gy-4">
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> Name </label>
+                                                <TextBox label="" className="form-control cm-news mt-2 cm-input1 ms-0 ps-0 pt-0" name="names" initialValue="james" required />
+                                            </div>
+                                        
+                                        </div>
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> E-mail </label>
+                                                <EmailInput name="emailbox" className="form-control  mt-2 cm-news cm-input1 ms-0 ps-0 pt-0" label="" initialValue="nospam@example.com" required/>
+                                               
+                                            </div>
+                                        
+                                        </div>
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> Phone </label>
+                                                <Telephone label="" name="myTelephone" className="form-control mt-2 cm-news cm-input1 ms-0 ps-0 pt-0" initialValue="18025105" required />
+                                          
+                                               
+                                            </div>
+                                        
+                                        </div>
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> Designation </label>
+                                                <Select options={options}  className="mt-2 cm-dops" />
+                                               
+                                               
+                                            </div>
+                                        
+                                        </div>
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> Role </label>
+                                                <Select options={role} className="mt-2 cm-dops" />
+                                               
+                                               
+                                            </div>
+                                        
+                                        </div>
+                                        <div className="col">
+                                            <div className="form-group">
+                                                <label> Created </label>
+                                                <TextBox label="" className="form-control mt-2 cm-news cm-input1 ms-0 ps-0 pt-0" name="created" initialValue="exmpale@gmail.com" required />
+                                            </div>
+                                        
+                                        </div>
+                                 </div>
+                              </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -186,14 +254,12 @@ function Topbar() {
 
                 <div className="footer-diuv-modal">
                     <div className="d-flex align-items-center">
-                        <NavLink to="/edit" className="btn btn-aditext">  Edit  </NavLink>
-                        <Button className="btn btn-aditext ms-3"
-                        onClick={e => {
-                            console.info('The button was clicked')
-                        }}
-                        >
-                           Cancel
-                        </Button>
+                   
+                        <button type="button" className="btn btn-aditext" onClick={showfind} >  Edit 
+                        </button>
+                        <button type="button" className="btn btn-aditext ms-3" onClick={hideFind} >  Cancel
+                        </button>
+                       
                     </div>
                 </div>
                

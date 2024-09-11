@@ -66,7 +66,7 @@ function getNumberOfPages(rowCount, rowsPerPage) {
         cell: () => (
           <div className="App">
             <div class="d-flex align-items-center">
-                <NavLink to="/" className="btn btn-edit"> <MdOutlineEdit /> </NavLink>
+                <NavLink to="/edit-member" className="btn btn-edit"> <MdOutlineEdit /> </NavLink>
                 <NavLink to="/" className="btn btn-edit ms-3"> < TfiTrash /> </NavLink>
               
              

@@ -1675,7 +1675,7 @@ height: 37px;
 }
 .right-houw{
 position: relative;
-width: 38%;
+max-width: 93%;
 }
 .right-houw .indoi{
 position: relative;
@@ -2361,6 +2361,9 @@ position: relative;
 .jodit-status-bar-link{
   display: none !important;
 }
+.mobile-menu-fiexed .active svg{
+  color: var(--lightcolor);
+} 
 @media(max-width:910px){
 .main-sliderbar{
   transform: translateX(-234px);
@@ -2400,6 +2403,25 @@ table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selecte
 }
 .test-block-div .form-check {
   width: 49%;
+}
+
+.silder-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.link05 .txet-men06 {
+  color: var(--darkcolor) !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+.link05 span:first-child {
+  margin-bottom: 7px;
+}
+.link05 {
+  display: table;
+  text-align: center;
+  padding: 6px 0;
 }
 }
 
@@ -2741,4 +2763,72 @@ font-weight: 400;
   width: 14px;
   height: 14px;
   margin-right: 5px;
+}
+.cm-input1 input{
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 0;
+  padding-left: 9px;
+  font-size: 15px;
+}
+.cm-btny{
+  line-height: 40px;
+}
+.tab-utsy {
+  margin-top: 18px;
+}
+.cht .fileupload-view .file-upload-box{
+  background: #fff !important;
+}
+.relty-btn{
+  background: none !important;
+  outline: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #a8aeb5;
+  font-size: 12px;
+  cursor: pointer;
+}
+.relty-btn:hover{
+  color: var(--darkcolor);
+}
+.file-colors{
+  color: blueviolet;
+  line-height: 15px;
+}
+.ps-btn{
+  line-height: 39px;
+}
+.edit-forms{
+  display: none;
+}
+.pro-div-show .edit-forms{
+  display:block;
+}
+.pro-div-show .show-profiles{
+  display:none;
+}
+.test-block-div .cm-news{
+  border: 1px solid #ced4da !important;
+  height: 45px !important;
+}
+.cm-dops .css-13cymwt-control{
+  height: 45px !important;
+}
+
+
+.mobile-menu-fiexed {
+  background: #fff;
+  padding: 15px 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 15;
+  box-shadow: #0000005c 1px 2px 45px;
+  min-height: 90px;
+  padding-top: 0;
 }

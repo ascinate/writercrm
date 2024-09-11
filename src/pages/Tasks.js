@@ -4,6 +4,7 @@ import Topbar from "../component/Topbar";
 import DataTable from "react-data-table-component";
 import Alltask from "../component/Taskdata";
 import CreateTask from "../component/CreateTask";
+import MobileMenu from "../component/MobileMenu";
 
 
 function getNumberOfPages(rowCount, rowsPerPage) {
@@ -157,6 +158,8 @@ function Tasks(){
                     />
                 </div>
              </section>
+
+             <MobileMenu/>
           </main>
 
 
