@@ -134,11 +134,6 @@ function getNumberOfPages(rowCount, rowsPerPage) {
 function Vendor(){
     const [ mcworkData, setworkData] = useState(Allvender);
     console.log(mcworkData);
-    const [isClearable, setIsClearable] = useState(true);
-    const [isSearchable, setIsSearchable] = useState(true);
-    const [isDisabled, setIsDisabled] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
-    const [isRtl, setIsRtl] = useState(false);
 
     return(
         <>
