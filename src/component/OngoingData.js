@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Alltask = [
+const AllOngoing = [
     {
         id: 1,
         title: <NavLink to="/edit-task"> AK0307 Sangeeta 2500 words Data driven decisions </NavLink>,
@@ -8,26 +8,26 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       
       },
       {
         id: 2,
-        title: <NavLink to="/edit-task">Z0C120A1 <span className="noti5">1</span> </NavLink>,
+        title: <NavLink to="/edit-task">Z0C120A1 <span>1</span> </NavLink> ,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 3,
-        title: <NavLink to="/edit-task">WS24 <span className="noti5">2</span>  </NavLink>,
+        title: <NavLink to="/edit-task">WS24</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 4,
@@ -36,7 +36,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 5,
@@ -45,7 +45,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 6,
@@ -54,7 +54,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 7,
@@ -63,7 +63,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 8,
@@ -72,7 +72,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 9,
@@ -81,7 +81,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 10,
@@ -90,7 +90,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 11,
@@ -99,7 +99,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 12,
@@ -108,7 +108,7 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
       {
         id: 13,
@@ -117,8 +117,8 @@ const Alltask = [
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
         responsible:"Saswati",
-        status: "Completed",
+        status: "Ongoing;",
       },
 ];
  
-export default Alltask;
+export default AllOngoing;

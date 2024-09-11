@@ -113,19 +113,19 @@ function Topbar() {
         <section className="top-tabsl-div w-100">
             <ul className="d-flex align-items-center">
               <li>
-                <NavLink to="/" className="comoiu-main position-relative">
+                <NavLink to="/tasks" className="comoiu-main position-relative">
                     Tasks
                     <span className="cou06">6</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="comoiu-main position-relative">
+                <NavLink to="/ongoing" className="comoiu-main position-relative">
                     Ongoing
                     <span className="cou06">7</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" className="comoiu-main position-relative">
+                <NavLink to="/comments" className="comoiu-main position-relative">
                     Comments
                     <span className="cou06">7</span>
                 </NavLink>
@@ -172,7 +172,7 @@ function Topbar() {
                                 <h2>  Contact information </h2>
                             </div>
                             <div className="proifle-pic-name">
-                              <div className="show-profiles">
+                              {/* <div className="show-profiles">
                                 <div className="row row-cols-1 gy-4">
                                     
                                      {UserDate.map((personals, index) => (
@@ -187,7 +187,7 @@ function Topbar() {
                                    
                                     
                                 </div>
-                              </div>
+                              </div> */}
                               <div className="edit-forms">
                                  <div className="row row-cols-1 row-cols-lg-2 gy-4">
                                         <div className="col">
@@ -255,7 +255,7 @@ function Topbar() {
                 <div className="footer-diuv-modal">
                     <div className="d-flex align-items-center">
                    
-                        <button type="button" className="btn btn-aditext" onClick={showfind} >  Edit 
+                        <button type="button" className="btn btn-aditext" onClick={showfind} >  Update 
                         </button>
                         <button type="button" className="btn btn-aditext ms-3" onClick={hideFind} >  Cancel
                         </button>

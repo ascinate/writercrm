@@ -86,13 +86,9 @@ function EditTask(){
                                        Resume 
                                     </Button>
 
-                                    <Button name="btnresume" className="btn btn-pause cancel-btn ms-3"
-                                    onClick={e => {
-                                        console.info('The button was clicked')
-                                    }}
-                                    >
+                                    <NavLink to="/tasks" className="btn sp-line-height btn-pause cancel-btn ms-3" >
                                        Cancel 
-                                    </Button>
+                                    </NavLink>
                              </div>
                           </div>
                       </div>

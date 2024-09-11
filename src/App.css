@@ -2357,6 +2357,8 @@ position: relative;
   font-size: 13px;
   border-radius: .2rem;
   padding: 8px;
+  width: 131px;
+  text-align: center;
 }
 .jodit-status-bar-link{
   display: none !important;
@@ -2802,13 +2804,16 @@ font-weight: 400;
 .ps-btn{
   line-height: 39px;
 }
-.edit-forms{
+/* .edit-forms{
   display: none;
 }
 .pro-div-show .edit-forms{
   display:block;
 }
 .pro-div-show .show-profiles{
+  display:none;
+} */
+.show-profiles{
   display:none;
 }
 .test-block-div .cm-news{
@@ -2818,7 +2823,33 @@ font-weight: 400;
 .cm-dops .css-13cymwt-control{
   height: 45px !important;
 }
+.sp-line-height{
+  line-height: 39px;
+}
 
+.noti5 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--lightcolor);
+  color: var(--whitecolor);
+  font-size: 10px;
+  text-align: center;
+  display: inline-block;
+  line-height: 19px;
+  font-weight: 700;
+  position: relative;
+  top: 4px;
+  left: 7px;
+}
+
+.bOmZtP div:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
 
 .mobile-menu-fiexed {
   background: #fff;
@@ -2831,4 +2862,11 @@ font-weight: 400;
   box-shadow: #0000005c 1px 2px 45px;
   min-height: 90px;
   padding-top: 0;
+}
+
+.ongingits .rdt_TableRow div:last-child > div{
+  background: #008a00 !important;
+  background: #008a00 !important;
+  width: 131px;
+  text-align: center;
 }

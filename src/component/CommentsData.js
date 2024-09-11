@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Alltask = [
+const Allcomments = [
     {
         id: 1,
         title: <NavLink to="/edit-task"> AK0307 Sangeeta 2500 words Data driven decisions </NavLink>,
@@ -13,7 +13,7 @@ const Alltask = [
       },
       {
         id: 2,
-        title: <NavLink to="/edit-task">Z0C120A1 <span className="noti5">1</span> </NavLink>,
+        title: <NavLink to="/edit-task">Z0C120A1 <span>1</span> </NavLink> ,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -22,7 +22,7 @@ const Alltask = [
       },
       {
         id: 3,
-        title: <NavLink to="/edit-task">WS24 <span className="noti5">2</span>  </NavLink>,
+        title: <NavLink to="/edit-task">WS24</NavLink>,
         active:  ["2024/03/22", "02:58:34"],
         deadline: ["2024/03/28", "21:45"],
         deadline: ["2024/03/28", "21:45"],
@@ -121,4 +121,4 @@ const Alltask = [
       },
 ];
  
-export default Alltask;
+export default Allcomments;

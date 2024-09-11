@@ -12,6 +12,8 @@ import EditVendor from "./pages/EditVendor.js";
 import EditMember from "./pages/EditMember.js";
 import EditTask from "./pages/EditTask.js";
 import EditComment from "./pages/EditComment.js";
+import Comments from "./pages/Comments.js";
+import Ongoing from "./pages/Ongoing.js";
 import { BrowserRouter as Router, Routes, Route, Switch} from "react-router-dom";
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
                     <Route excaexact="true" path="/edit-member" element={<EditMember/>} />
                     <Route excaexact="true" path="/edit-task" element={<EditTask/>} />
                     <Route excaexact="true" path="/edit-comment" element={<EditComment/>} />
+                    <Route excaexact="true" path="/comments" element={<Comments/>} />
+                    <Route excaexact="true" path="/ongoing" element={<Ongoing/>} />
                   </Routes>
              </div>
              
